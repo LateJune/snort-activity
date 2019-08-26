@@ -1,0 +1,2 @@
+snort -l ./logs -c fullstack.rules -i eth1 -A console
+snort -A console -u snort -g snort -c fullstack.rules -i eth1

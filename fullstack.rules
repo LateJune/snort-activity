@@ -1,1 +1,7 @@
 alert icmp any any -> 192.168.56.101 any (msg: "icmp packet recieved"; sid:100001;)
+
+alert tcp any any -> 192.168.56.101 22 (msg: "Nmap NULL Scan"; flags:0; sid:100002; rev:1;)
+
+alert tcp any any -> 192.168.56.101 22 (msg: "Nmap FIN Scan";flags:F;sid:100003;rev:1;)
+
+alert udp any any -> 192.168.56.101 any (msg: "Nmap UDP Scan";sid:100004;rev:1;)
