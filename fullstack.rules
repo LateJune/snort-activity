@@ -1,0 +1,1 @@
+alert icmp any any -> 192.168.56.101 any (msg: "icmp packet recieved"; sid:100001;)
